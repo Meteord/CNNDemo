@@ -17,18 +17,18 @@ dataiter = iter(trainloader)
 images, labels = dataiter.next()
 
 # show images
-imshow(torchvision.utils.make_grid(images))
+#imshow(torchvision.utils.make_grid(images))
 # print labels
-print(' '.join('%5s' % config.classes[labels[j]] for j in range(4)))
+#print(' '.join('%5s' % config.classes[labels[j]] for j in range(4)))
 
 # get some random training images
-dataiter = iter(trainloader)
-images, labels = dataiter.next()
+#dataiter = iter(trainloader)
+#images, labels = dataiter.next()
 
 # show images
-imshow(torchvision.utils.make_grid(images))
+#imshow(torchvision.utils.make_grid(images))
 # print labels
-print(' '.join('%5s' % config.classes[labels[j]] for j in range(4)))
+#print(' '.join('%5s' % config.classes[labels[j]] for j in range(4)))
 
 
 
@@ -36,7 +36,7 @@ criterion = nn.CrossEntropyLoss()
 optimizer = optim.SGD(net.parameters(), lr=0.001, momentum=0.9)
 
 
-for epoch in range(2):  # loop over the dataset multiple times
+for epoch in range(3):  # loop over the dataset multiple times
 
     running_loss = 0.0
     for i, data in enumerate(trainloader, 0):
